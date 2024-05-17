@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Portofolio</h1>
+        <h1>Trio Rizki Hidayanto</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('tentang')">Tentang Saya</a></li>
+                <li><a href="#" onclick="showSection('portofolio')">Portofolio</a></li>
+                <li><a href="#" onclick="showSection('kontak')">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="tentang" class="hidden">
+        <h2>Tentang Saya</h2>
+        <img src="foto.jpg.jpeg" alt="foto.jpg.jpeg" width="200" height="200">
+        <link rel="stylesheet" href="style.css">
+        <p>Nama: Trio Rizki Hidayanto</p>
+        <p>Nim: 221250000459</p>
+
+    </section>
+
+    <section id="portofolio" class="hidden">
+        <h2>Portofolio</h2>
+        <ul>
+            <li>1. Pemrograman Web</li>
+            <li>2. Kewirausahaan</li>
+            <li>3. Studi Al Qur'an dan Hadits</li>
+            <li>4. Sistem Pendukung Keputusan</li>
+            <li>5. Interaksi Manusia dan Komputer</li>
+            <li>6. E-commerce</li>
+            <li>7. Analisis dan Perancangan Sistem</li>
+            <li>8. Bisnis Intelligence</li>
+            <!-- Tambahkan matakuliah yang telah diambil -->
+        </ul>
+    </section>
+
+    <section id="kontak" class="hidden">
+        <h2>Kontak</h2>
+        <p>Email: triojepara204@gmail.com</p>
+        <p>Telepon: 089524195966</p>
+        <p>Alamat: Rt 31, Rw 05, Plajan, Pakis Aji, Jepara</p>
+    </section>
+
+    <script>
+        // Fungsi untuk menampilkan bagian yang dipilih dan menyembunyikan yang lain
+        function showSection(sectionId) {
+            // Mengambil semua elemen <section>
+            var sections = document.getElementsByTagName("section");
+            // Menyembunyikan semua elemen <section>
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].classList.add('hidden');
+            }
+            // Menampilkan elemen <section> yang dipilih
+            document.getElementById(sectionId).classList.remove('hidden');
+        }
+    </script>
+
+</body>
+
+</html>

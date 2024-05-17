@@ -1,0 +1,83 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d1d1d1;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #303031;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #4da8fd;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+section p {
+    margin-bottom: 10px;
+}
+
+section ul {
+    list-style: none;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff1100;
+    color: #e49503;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
